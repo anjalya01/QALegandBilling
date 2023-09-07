@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-07T00:30:44 IST" name="Default suite" finished-at="2023-09-07T00:31:12 IST" duration-ms="28276">
+    <groups>
+    </groups>
+    <test started-at="2023-09-07T00:30:44 IST" name="Default test" finished-at="2023-09-07T00:31:12 IST" duration-ms="28276">
+      <class name="com.qalegandbilling.testscript.EditUserTest">
+        <test-method is-config="true" signature="setExtent(org.testng.ITestContext)[pri:0, instance:com.qalegandbilling.testscript.EditUserTest@75d3a5e0]" started-at="2023-09-07T00:30:43 IST" name="setExtent" finished-at="2023-09-07T00:30:44 IST" duration-ms="411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@ab94a32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.qalegandbilling.testscript.EditUserTest@75d3a5e0]" started-at="2023-09-07T00:30:44 IST" name="setUP" finished-at="2023-09-07T00:30:51 IST" duration-ms="7786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="TC_009_verify_EditUser()[pri:0, instance:com.qalegandbilling.testscript.EditUserTest@75d3a5e0]" started-at="2023-09-07T00:30:51 IST" name="TC_009_verify_EditUser" finished-at="2023-09-07T00:31:12 IST" duration-ms="20365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_009_verify_EditUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qalegandbilling.testscript.EditUserTest@75d3a5e0]" started-at="2023-09-07T00:31:12 IST" name="tearDown" finished-at="2023-09-07T00:31:12 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_009_verify_EditUser status=SUCCESS method=EditUserTest.TC_009_verify_EditUser()[pri:0, instance:com.qalegandbilling.testscript.EditUserTest@75d3a5e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qalegandbilling.testscript.EditUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
