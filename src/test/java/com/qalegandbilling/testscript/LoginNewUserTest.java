@@ -52,7 +52,8 @@ public class LoginNewUserTest extends Base {
 		adduser.enterSalesPercentage(salesCommision);
 		user=adduser.clickSaveButton();
 		home=user.click_HomeButton();
-		login = home.clickSighnoutButton();
+		//login = home.clickSighnoutButton();
+		home.clickSighnoutButton();
 		String expUsername=fname+" "+lname;
 		login.enterUserName(username);
 		login.enterPassword(pwd);
