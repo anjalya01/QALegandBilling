@@ -25,7 +25,7 @@ public class EditUserTest extends Base {
 	EditUserPage edituser;
 	
 	
-	@Test
+	@Test(priority=2,description="TC_011 verify whether the user can edit",groups= {"Smoke"})
 	public void TC_009_verify_EditUser() {
 	List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 	String uname=data.get(0).get(1);

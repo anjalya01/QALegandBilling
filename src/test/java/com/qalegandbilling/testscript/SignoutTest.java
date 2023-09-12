@@ -18,7 +18,7 @@ public class SignoutTest extends Base {
 	LoginPage login;
 	HomePage home;
 
-	@Test(priority=3,description="TC_001 verify user is navigate to loginpage by clicking sighnout",groups= {"Regression"})
+	@Test(priority=1,description="TC_001 verify user is navigate to loginpage by clicking sighnout",groups= {"Regression"})
 	public void TC_004_verifyuser_isNavigate_to_LoginPage_by_clicking_signout() {
 		List<ArrayList<String>> data = ExcelUtility.excelDataReader("HomePage");
 		String uname = data.get(0).get(1);

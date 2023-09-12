@@ -21,7 +21,7 @@ public class LoginNewUserTest extends Base {
 	AddUsersPage adduser;
 	UserPage user;
 		
-	@Test
+	@Test(priority=2,description="TC_011 verify login with newlly added user",groups= {"Smoke"})
 	public void TC_011_verifyValidLogin() {
 		List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 		String uname=data.get(0).get(1);

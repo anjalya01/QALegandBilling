@@ -21,7 +21,7 @@ HomePage home;
 UserPage user;
 AddUsersPage adduser;
 	
-	@Test
+	@Test(priority=4,description="TC_001 verify whether the user can delete",groups= {"Sanity"})
 	public void TC_007_verify_DeleteUser() {
 	List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 	String uname=data.get(0).get(1);

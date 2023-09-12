@@ -28,7 +28,7 @@ public class ViewUserTest extends Base{
 	ViewUserPage viewuser;
 	
 	
-	@Test
+	@Test(priority=4,description="TC_001 verify viewUser",groups= {"Sanity"})
 	public void TC_0010_validate_ViewUser() {
 	List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 	String uname=data.get(0).get(1);

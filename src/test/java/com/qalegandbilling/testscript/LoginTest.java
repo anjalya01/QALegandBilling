@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.qalegandbilling.automationcore.Base;
 import com.qalegandbilling.constants.ErrorMessages;
 import com.qalegandbilling.dataprovider.DataProviders;
+import com.qalegandbilling.listners.Retry;
 import com.qalegandbilling.pages.HomePage;
 import com.qalegandbilling.pages.LoginPage;
 import com.qalegandbilling.pages.ResetPage;
@@ -19,7 +20,7 @@ public class LoginTest extends Base{
 	LoginPage login;
 	HomePage home;
 		
-	@Test(priority=1,description="TC_001 verify Valid login",groups= {"Regression"})
+	@Test(priority=1,description="TC_001 verify Valid login",groups= {"Regression"},retryAnalyzer=Retry.class)
 	public void TC_001_verifyValidLogin() {
 		List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 		String uname=data.get(0).get(1);

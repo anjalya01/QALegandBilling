@@ -9,8 +9,8 @@
   <groups>
   <run>
   <include name="Regression"></include>
-  <exclude name="Smoke"></exclude>
-  <exclude name="Sanity"></exclude>
+  <include name="Smoke"></include>
+  <include name="Sanity"></include>
   </run>
   
   </groups>
@@ -20,6 +20,12 @@
       <class name="com.qalegandbilling.testscript.UserTest"/>
       <class name="com.qalegandbilling.testscript.SignoutTest"/>
       <class name="com.qalegandbilling.testscript.ResetTest"/>
+      <class name="com.qalegandbilling.testscript.LoginNewUserTest"></class>
+      <class name="com.qalegandbilling.testscript.DeleteUserTest"></class>
+      <class name="com.qalegandbilling.testscript.EditUserTest"></class>
+      <class name="com.qalegandbilling.testscript.RoleTest"></class>
+      <class name="com.qalegandbilling.testscript.ViewUserTest"></class>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

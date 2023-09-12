@@ -22,7 +22,7 @@ public class AddUserTest extends Base {
 	HomePage home;
 	UserPage user;
 
-	@Test(priority=2,description="TC_001 verify user can add users",groups= {"Regression"})
+	@Test(priority=1,description="TC_001 verify user can add users",groups= {"Regression"})
 	public void TC_005_verifyUsercan_Add_users() {
 		List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
 		String uname = data.get(0).get(1);

@@ -23,7 +23,7 @@ public class RoleTest extends Base {
 	UserPage user;
 	RolesPage role;
 	
-	@Test
+	@Test(priority=1,description="TC_008 verify Role",groups= {"Regression"})
 	public void TC_008_verify_VerifyUser() {
 	List<ArrayList<String>>data=ExcelUtility.excelDataReader("LoginPage");
 	String uname=data.get(0).get(1);
