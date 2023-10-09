@@ -7,8 +7,9 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.WebDriver;
-
 public class FileUploadUtility {
+
+	
 	public void FileUploadUsingRobotClass(WebDriver driver, String path) throws AWTException, InterruptedException {
 		StringSelection s = new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);

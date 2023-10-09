@@ -15,6 +15,7 @@ public class DriverFactory {
 	 * browser
 	 *
 	 * @param browser
+	 * 
 	 * @return this will return tldriver.
 	 */
 
@@ -22,7 +23,8 @@ public class DriverFactory {
 	    if(browser.equals("chrome")){
 	        ChromeOptions ops=new ChromeOptions();
 	        ops.addArguments("--remote-allow-origins=*");
-	        System.setProperty("webdriver.chrome.driver","C:\\Users\\Manu Sakthi\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+	        String driverPath=Base.getDriverPath();        
+	        System.setProperty("webdriver.chrome.driver",driverPath);
 	        tlDriver.set(new ChromeDriver(ops));
 	    }else if(browser.equals("FireFox")){
 	        tlDriver.set(new FirefoxDriver());

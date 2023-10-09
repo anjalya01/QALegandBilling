@@ -22,7 +22,7 @@ import com.qalegandbilling.extentmanger.ExtentManager;
 
 public class Base {
 	public WebDriver driver;
-	public Properties prop;
+	public static Properties prop;
 	public FileInputStream fs;
 
 	public Base() {
@@ -39,7 +39,7 @@ public class Base {
 		}
 	}
 // to run with configeration file
-/*	@BeforeMethod(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 
 	@Parameters({ "browser" })            
 	public void setUP(String browserName) {
@@ -47,14 +47,20 @@ public class Base {
 		driver = DriverFactory.testInitialization(browserName);
 		driver.get(url);
 	}
-*/
-	 @BeforeMethod(alwaysRun = true)
+//to run individual testcase
+	
+	/* @BeforeMethod(alwaysRun = true)
 	   public void setUP() { 
 	   String browser =prop.getProperty("browser");
 	   String url = prop.getProperty("url");
 	   driver = DriverFactory.testInitialization(browser); 
 	   driver.get(url); 
-	   }
+	   }*/
+	
+	 public static String getDriverPath() {
+		 String driverPath=System.getProperty("user.dir")+prop.getProperty("driverPath");
+		 return driverPath;
+	 }
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) throws IOException {

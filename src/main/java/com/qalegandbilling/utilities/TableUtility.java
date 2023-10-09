@@ -1,11 +1,9 @@
 package com.qalegandbilling.utilities;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-
 public class TableUtility {
 	public static List<ArrayList<String>> get_Dynamic_TwoDimension_TablElemnts(List<WebElement> rowItems,
 			List<WebElement> columnItems) {
@@ -25,3 +23,5 @@ public class TableUtility {
 		return gridData;
 	}
 }
+
+

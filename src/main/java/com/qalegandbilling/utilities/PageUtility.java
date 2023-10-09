@@ -21,19 +21,7 @@ public class PageUtility {
 	    return text;
 	}
 
-	public void DragAndDrop(WebDriver driver, WebElement source, WebElement destination) {
-	    Actions action = new Actions(driver);
-	    action.dragAndDrop(source, destination).build().perform();
-	}
-	public void PromptAlert(WebDriver driver) {
-		Alert alert = driver.switchTo().alert();
-	//	alert.accept();
-		alert.dismiss();
-	}
-	public Boolean isSelected(WebElement target) {
-        boolean selectedStatus = target.isSelected();
-        return selectedStatus;
-    }
+	
     public boolean isDisplayed(WebElement target) {
         boolean displayStatus = target.isDisplayed();
         return displayStatus;
