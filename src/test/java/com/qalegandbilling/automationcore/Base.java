@@ -39,23 +39,23 @@ public class Base {
 		}
 	}
 // to run with configeration file
-	@BeforeMethod(alwaysRun = true)
+	/*@BeforeMethod(alwaysRun = true)
 
 	@Parameters({ "browser" })            
 	public void setUP(String browserName) {
 		String url = prop.getProperty("url");
 		driver = DriverFactory.testInitialization(browserName);
 		driver.get(url);
-	}
+	}*/
 //to run individual testcase
 	
-	/* @BeforeMethod(alwaysRun = true)
+	 @BeforeMethod(alwaysRun = true)
 	   public void setUP() { 
 	   String browser =prop.getProperty("browser");
 	   String url = prop.getProperty("url");
 	   driver = DriverFactory.testInitialization(browser); 
 	   driver.get(url); 
-	   }*/
+	   }
 	
 	 public static String getDriverPath() {
 		 String driverPath=System.getProperty("user.dir")+prop.getProperty("driverPath");
